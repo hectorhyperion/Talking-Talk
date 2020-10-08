@@ -6,13 +6,13 @@
 
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb my-breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="dashboard">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
       </ol>
     </nav>
     <div class="welcome-msg pt-3 pb-4">
-      <h1>Hi <span class="text-primary">John</span>, Welcome back</h1>
-      <p>Very detailed & featured admin.</p>
+      <h1>Hi <span class="text-primary">Admin</span>, Welcome back to</h1>
+      <p>The Talking-Talk Admin parnel</p>
     </div>
 
     <!-- statistics data -->
@@ -122,7 +122,7 @@
                   <div class="inbox_chat">
                     <div class="chat_list active_chat">
                       <div class="chat_people">
-                        <div class="chat_img"> <img src="assets/images/avatar5.jpg" alt="Alexander" class="img-fluid">
+                        <div class="chat_img"> <img src="<?php echo base_url('assets/images/avatar5.jpg')?>" alt="Alexander" class="img-fluid">
                         </div>
                         <div class="chat_ib">
                           <h5>Alexander <span class="chat_date">1 hour ago</span></h5>
@@ -132,7 +132,7 @@
                     </div>
                     <div class="chat_list">
                       <div class="chat_people">
-                        <div class="chat_img"> <img src="assets/images/avatar3.jpg" alt="Anderson" class="img-fluid">
+                        <div class="chat_img"> <img src="<?php echo base_url('assets/images/avatar3.jpg')?>" alt="Anderson" class="img-fluid">
                         </div>
                         <div class="chat_ib">
                           <h5>Anderson <span class="chat_date">5 hours ago</span></h5>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="chat_list">
                       <div class="chat_people">
-                        <div class="chat_img"> <img src="assets/images/avatar5.jpg" alt="Isabella" class="img-fluid">
+                        <div class="chat_img"> <img src="<?php echo base_url('assets/images/avatar5.jpg')?>" alt="Isabella" class="img-fluid">
                         </div>
                         <div class="chat_ib">
                           <h5>Isabella <span class="chat_date">Yesterday</span></h5>
@@ -152,7 +152,7 @@
                     </div>
                     <div class="chat_list">
                       <div class="chat_people">
-                        <div class="chat_img"> <img src="assets/images/avatar4.jpg" alt="Charlotte" class="img-fluid">
+                        <div class="chat_img"> <img src="<?php echo base_url('assets/images/avatar4.jpg')?>" alt="Charlotte" class="img-fluid">
                         </div>
                         <div class="chat_ib">
                           <h5>Charlotte <span class="chat_date">Mar 04</span></h5>
@@ -162,7 +162,7 @@
                     </div>
                     <div class="chat_list">
                       <div class="chat_people">
-                        <div class="chat_img"> <img src="assets/images/avatar2.jpg" alt="Davidson" class="img-fluid">
+                        <div class="chat_img"> <img src="<?php echo base_url('assets/images/avatar2.jpg')?>" alt="Davidson" class="img-fluid">
                         </div>
                         <div class="chat_ib">
                           <h5>Davidson <span class="chat_date">Feb 18</span></h5>
@@ -172,7 +172,7 @@
                     </div>
                     <div class="chat_list">
                       <div class="chat_people">
-                        <div class="chat_img"> <img src="assets/images/avatar1.jpg" alt="Elexa ker" class="img-fluid">
+                        <div class="chat_img"> <img src="<?php echo base_url('assets/images/avatar1.jpg')?>" alt="Elexa ker" class="img-fluid">
                         </div>
                         <div class="chat_ib">
                           <h5>Elexa ker <span class="chat_date">Feb 04</span></h5>
@@ -182,7 +182,7 @@
                     </div>
                     <div class="chat_list">
                       <div class="chat_people">
-                        <div class="chat_img"> <img src="assets/images/avatar4.jpg" alt="Charlotte" class="img-fluid">
+                        <div class="chat_img"> <img src="<?php echo base_url('assets/images/avatar4.jpg')?>" alt="Charlotte" class="img-fluid">
                         </div>
                         <div class="chat_ib">
                           <h5>Charlotte <span class="chat_date">Jan 28</span></h5>
@@ -195,7 +195,7 @@
                 <div class="mesgs">
                   <div class="msg_history">
                     <div class="incoming_msg">
-                      <div class="incoming_msg_img"> <img src="assets/images/avatar5.jpg" alt="Alexander"
+                      <div class="incoming_msg_img"> <img src="<?php echo base_url('assets/images/avatar5.jpg')?>" alt="Alexander"
                           class="img-fluid"> </div>
                       <div class="received_msg">
                         <div class="received_withd_msg">
@@ -212,7 +212,7 @@
                       </div>
                     </div>
                     <div class="incoming_msg">
-                      <div class="incoming_msg_img"> <img src="assets/images/avatar5.jpg" alt="Alexander"
+                      <div class="incoming_msg_img"> <img src="<?php echo base_url('assets/images/avatar5.jpg')?>" alt="Alexander"
                           class="img-fluid"> </div>
                       <div class="received_msg">
                         <div class="received_withd_msg">
@@ -228,7 +228,7 @@
                       </div>
                     </div>
                     <div class="incoming_msg">
-                      <div class="incoming_msg_img"> <img src="assets/images/avatar5.jpg" alt="Alexander"
+                      <div class="incoming_msg_img"> <img src="<?php echo base_url('assets/images/avatar5.jpg')?>" alt="Alexander"
                           class="img-fluid"> </div>
                       <div class="received_msg">
                         <div class="received_withd_msg">
