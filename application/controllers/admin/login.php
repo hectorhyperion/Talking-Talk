@@ -26,11 +26,13 @@
  			}
  			else
  			{
+ 				 
  				redirect('admin');
  			}
  		
 	 			
  		}
+ 		
  	}
 
 

@@ -1,3 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>The Talking-Talk Admin</title>
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="<?php echo base_url('assets/css/style-starter.css')?>">
+
+  <!-- google fonts -->
+  <link href="//fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+ 
+
+<body class="sidebar-menu-collapsed">
+  <div class="se-pre-con"></div>
   <!-- header-starts -->
   <div class="header sticky-header">
 
@@ -110,14 +130,14 @@
                 </a>
                 <ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenu3">
                   <li class="user-info">
-                    <h5 class="user-name">John Deo</h5>
+                    <h5 class="user-name">Admin</h5>
                     <span class="status ml-2">Available</span>
                   </li>
                   <li> <a href="#"><i class="lnr lnr-user"></i>My Profile</a> </li>
-                  <li> <a href="#"><i class="lnr lnr-users"></i>2k Followers</a> </li>
+                  
                   <li> <a href="#"><i class="lnr lnr-cog"></i>Setting</a> </li>
                   <li> <a href="#"><i class="lnr lnr-heart"></i>100 Likes</a> </li>
-                  <li class="logout"> <a href="login"><i class="fa fa-power-off"></i> Logout</a> </li>
+                  <li class="logout"> <a href="<?php echo site_url('admin/dashboard/logout')?>"><i class="fa fa-power-off"></i> Logout</a> </li>
                 </ul>
               </li>
             </ul>
