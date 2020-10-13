@@ -23,10 +23,27 @@
  <?php include 'assets/header.php'; ?>
   <!-- main content start -->
  <?php include 'assets/main.php'?>
- <h1>News</h1>
+		 <h1>News</h1>
+		 <a href="<?php echo site_url('admin/news/add')?>" class="btn btn-info">Add New News </a>
+		 <hr>
+		 	<?php // echo flashdata 
+		 	if($this->session->flashdata('success'))
+		 	{
+		 		?>
+		 	
+			 <div class="alert alert-success" role="alert" >
+		 	 <?php
+
+				 echo $this->session->flashdata('success');
+		 ?>
+		 	 </div>
+		 	 <?php 
+		 }?>
+ 
+
  <table class="table table-bordered">
  	<tr>
- 		<th>Tittle</th>
+ 		<th>Title</th>
  		<th>Aurthor</th>
  		<th>Action</th>
 
@@ -40,14 +57,18 @@
 		 {
 		 	 ?>
 		 	 <tr>
-		 	 	<td><?php echo $n->tittle;?></td>	
-		 	 	<td><?php echo $n->author;?></td>	
-		 	 	<td><a href="" class="btn btn-primary">edit</a> <a href=""class="btn btn-danger">delete</a></td>	
+		 	 	 <td><?php echo $n->title;?></td>
+		 	 	<td><?php echo $n->author;?></td>
+		 	 	<?php // using uri segment to pass id   ?>	
+		 	 	<td><a href="<?php echo site_url('admin/news/edit/'.$n->id);?>" class="btn btn-primary">edit</a> <a href="<?php echo site_url('admin/news/delete/'.$n->id);?>"class="btn btn-danger">delete</a></td>	
 
 
 		 	 </tr>
 		 	 <?php  
 		 }
+
+
+
 
 
 		 ?>
