@@ -10,10 +10,27 @@
 				$this->load->model('news_model');
 
 		}
-		function index()
+		function index($offset=0)
 		{
-			
-			$arr['news']= $this->news_model->getall();
+			//load pagination library
+			$this->load->library('pagination');
+			//	url redirct admin folder,news controller,news view
+			$config['base_url']= site_url('admin/news/index');
+
+				// count the total number of news from the database
+		    $config['total_rows'] = $this->news_model->countall();
+
+		    //total number of entries to show per page
+		    $config['per_page'] = 3 ;
+		    //pagination to fix search control
+		    $config['reuse_query_string'] = TRUE;
+
+		    // initia+lize pagination library
+		    $this->pagination->initialize($config);
+
+		    //collect all entries from database
+			$arr['news']= $this->news_model->getall($config['per_page'],$offset);
+
 			//passing the array to the view
 			$this->load->view('admin/news/news',$arr);
 		}
