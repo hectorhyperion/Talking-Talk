@@ -5,7 +5,7 @@
  <?php include 'assets/main.php'?>
 
 		  <h1><b>Edit News</b></h1><hr>
-		 <form action="<?php echo  site_url('admin/news/update/'.$news->id);?>" method="post" >
+		 <form action="<?php echo  site_url('admin/news/update/'.$news->id);?>" method="post" enctype="multipart/form-data" >
 		 	<div class="col-md-7" >
 		 	<div class="form-group">
 		 		<div class="row">

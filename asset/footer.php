@@ -18,22 +18,16 @@
 				</div>
 		</div>
 	<div class="footer_grid3">
-		<h3>We're Social</h3>
-		<div class="img_list">
-		    <ul>
-		     <li><img src="images/facebook.png" alt="" /><a href="#">Facebook</a></li>
-		     <li><img src="images/flickr.png" alt="" /><a href="#">Flickr</a></li>
-		     <li><img src="images/google.png" alt="" /><a href="#">Google</a></li>
-		     <li><img src="images/yahoo.png" alt="" /><a href="#">Yahoo</a></li>
-		     <li><img src="images/youtube.png" alt="" /><a href="#">Youtube</a></li>
-		     <li><img src="images/twitter.png" alt="" /><a href="#">Twitter</a></li>
-		     <li><img src="images/yelp.png" alt="" /><a href="#">Help</a></li>
-		    </ul>
-		</div>
+		 
 	</div>
 	</div>
 <div class="clear"></div>
 </div>
 	<div class="f_bottom">
-		<p>© 2012 Blog Master . All Rights Reserved | Design by<a href="http://w3layouts.com/"> W3Layouts</a></p>
+		<p>© 2020 Blog Master . All Rights Reserved | Design by Agim Pius</p>
 	</div>
+	</div>
+
+</body>
+</html>
+

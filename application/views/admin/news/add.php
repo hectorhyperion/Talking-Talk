@@ -11,7 +11,7 @@
 		 		<div class="row">
 		 			<label class="col-md-3">Title</label>
 		 			<div class="col-md-9">
-		 				<input type="text" name="title" class="form-control">
+		 				<input type="text" name="title" class="form-control" required="required">
 		 			</div>
 		 			<div class="clearfix"></div>
 			 </div> 		
@@ -20,7 +20,7 @@
 		 		<div class="row">
 		 			<label class="col-md-3">Author</label>
 		 			<div class="col-md-9">
-		 				<input type="text"name="author"class="form-control">
+		 				<input type="text"name="author"class="form-control" required="required">
 		 			</div>
 		 			<div class="clearfix"></div>
 			 </div> 		
@@ -29,7 +29,8 @@
 		 		<div class="row">
 		 			<label class="col-md-3">Description</label>
 		 			<div class="col-md-9">
-		 				<textarea name="description" class="form-control" ></textarea>
+		 				<textarea name="description" class="form-control" required="required
+		 				" ></textarea>
 		 			</div>
 		 			<div class="clearfix"></div>
 </div>		 		

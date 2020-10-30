@@ -2,13 +2,12 @@
 	<div class="header_top">
 		<div class="wrap">
 			<div class="logo">
-			     <a href="index.html"><img src="images/logo.png" alt="" /></a>
-			</div>
-			<div class="login_button">
-			    <ul>
-			    <li><a href="login.php">Sign in</a><li> | 
-			    <li><a href="login.php">Login</a></li>
-			    </ul>
+
+						</div>
+						
+			<div class="logo">
+				<br>
+			   <h1 style="color:rgb(233,165,333);  font-style:italic; font-weight: bold; font-size: 30.5px; font-family:Perpetua; padding: 2px; letter-spacing: 1px; display: inline-block;  ">WELCOME TO THE TALKING TALK </h1>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -17,23 +16,15 @@
 		<div class="wrap">
 			<div class="menu">
 			    <ul>
-			    	<li><a href="index.html">HOME</a></li>
-			    	<li><a href="single.html">ARTICLES</a></li>
-			    	<li><a href="single.html">SERVICES</a></li>
-			    	<li><a href="#">LOGOS</a></li>
-			    	<li><a href="single.html">TOOLS</a></li>
-			    	<li><a href="single.html">ICONS</a></li>
-			    	<li><a href="single.html">WALLPAPERS</a></li>
-			    	<li><a href="index.html">HELP</a></li>
-			    	<li><a href="contact.html">CONTACT</a></li>
+			    	<li><a href="<?php echo site_url('index');?>">HOME</a></li>
+			    	<li><a href="article">ARTICLES</a></li>
+			    	<li><a href="single.html">ABOUT US</a></li>
 			    </ul>
+ 
 			</div>
-			<div class="search_box">
-			    <form>
-			    <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
-			    </form>
-			</div>
+			 <div class="clearfix" ></div>
 			<div class="clear"></div>
+
 		</div>
 	</div>
 </div>
