@@ -3,8 +3,10 @@
 		  <!-- main content start -->
 
  <?php include 'assets/main.php'?>
+ 
+<a href="<?php echo site_url('admin/news');?>"><input type="button" name="back" value="back" class="btn btn-primary" style="float: right; font-family: algerian;" ></a>
 
-		  <h1><b>Edit News</b></h1><hr>
+		  <h1><b>Edit News</b></h1><br>
 		 <form action="<?php echo  site_url('admin/news/update/'.$news->id);?>" method="post" enctype="multipart/form-data" >
 		 	<div class="col-md-7" >
 		 	<div class="form-group">

@@ -69,6 +69,7 @@
 			$this->session->set_flashdata('success','News Deleted sucessfully');
 			redirect('admin/news');
 		}
+		
 	}
 
 

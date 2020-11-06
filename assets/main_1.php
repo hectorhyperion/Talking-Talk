@@ -3,11 +3,28 @@
 			<div class="wrapper">
 				<div class="form-inner-cont">
 					<h3>Login now</h3>
+					<br>
+					<?php if($this->session->flashdata('login_failed'))
+					{
+						?>
+					<div class="alert alert-danger" role="alert">
+						<?php
+						echo $this->session->flashdata('login_failed');
+						?>
+					</div>
+					<?php 
+
+						}
+
+
+					 ?>
+					
+        
 					<form  method="post" action="<?php echo site_url('admin/login/verify')?>"class="signin-form">
 						<div class="form-input">
 							<span class="fa fa-envelope-o" aria-hidden="true"></span> 
 							<input type="text" name="username"
-								placeholder="username" required  />
+								placeholder="username" required />
 								
 						</div>
 						<div class="form-input">
@@ -20,7 +37,7 @@
 								
 								
 							</label>
-							<button class="btn theme-button" name="submit" type="submit" value="submit" >Login</button>
+							<button class="btn btn-primary" name="submit" type="submit" value="submit" >Login</button>
 						</div>
 						 
 					</form>

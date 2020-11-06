@@ -26,7 +26,8 @@
  			}
  			else
  			{
- 				 
+ 				//flashdata for incorrect passowrd and user name 
+ 				 $this->session->set_flashdata('login_failed', 'incorect username/password');
  				redirect('admin');
  			}
  		

@@ -1,6 +1,5 @@
 <footer class="dashboard">
-  <p>&copy 2020 Collective. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank"
-      class="text-primary">W3layouts.</a></p>
+  <p>&copy 2020 Collective. All Rights Reserved | Design by TALKING-TALK.COM</p>
 </footer>
 <!--footer section end-->
 <!-- move top -->

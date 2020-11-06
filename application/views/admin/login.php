@@ -9,11 +9,15 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- //Meta tags -->
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>" type="text/css" media="all" /><!-- Style-CSS -->
+	<link rel="stylesheet" href="<?php echo base_url('assets/css/style-starter.css')?>" type="text/css" media="all" /><!-- Style-CSS -->
 	<link href="css/font-awesome.css" rel="stylesheet"><!-- font-awesome-icons -->
 </head>
 
 <body>
+	
+
 	<?php include 'assets/main_1.php';?>
+	
 </body>
 
 </html>

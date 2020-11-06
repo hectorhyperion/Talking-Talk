@@ -1,10 +1,10 @@
-<?php include 'assets/sidebar.php'; ?>
  <?php include 'assets/header.php'; ?>
 		  <!-- main content start -->
+<?php include 'assets/sidebar.php'; ?>
 
  <?php include 'assets/main.php'?>
-
-		  <h1>Add New News</h1>
+ <a href="<?php echo site_url('admin/news');?>"><input type="button" name="back" value="back" class="btn btn-primary" style="float: right; font-family: algerian;"></a>
+		  <h1>Add New News</h1>     <br>
 		 <form action="<?php echo  site_url('admin/news/save');?>" method="post" enctype="multipart/form-data" >
 		 	<div class="col-md-7" >
 		 	<div class="form-group">

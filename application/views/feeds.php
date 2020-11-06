@@ -1,7 +1,7 @@
-<?php $this->load->view('assets/header'); ?>
-    
 
-   	<?php 
+ <?php $this->load->view('assets/header'); ?>
+ 
+ 	<?php 
 			//using foreach loop to display news....
 		foreach($news as $n)
 		{
@@ -14,8 +14,8 @@
 			</div>
 
 			<div class="col-md-6">
-				<h1><?php echo substr($n->title,0,35) ;?></h1>
-				<p><?php echo substr( $n->description,0,140);?>
+				<h1 style="color: white;"><?php echo substr($n->title,0,35) ;?></h1>
+				<p  style="color: white;"><?php echo substr( $n->description,0,140);?>
 				<i>(Author:<?php echo $n->author;?>)</i></p>
 			</div>
 			</div>
@@ -23,6 +23,12 @@
 		<?php 
 
 		} ?>
-		 
+	 
+	 
+		 <?php echo $this->pagination->create_links();?>
 
-<?php $this->load->view('assets/footer');?>
+			 
+
+ <?php $this->load->view('assets/footer'); ?>
+</div>
+</div></div>

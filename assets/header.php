@@ -9,6 +9,7 @@
   <title>The Talking-Talk Admin</title>
 
   <!-- Template CSS -->
+  <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>">
   <link rel="stylesheet" href="<?php echo base_url('assets/css/style-starter.css')?>">
 
   <!-- google fonts -->
