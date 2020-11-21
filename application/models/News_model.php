@@ -17,7 +17,10 @@
 				//to arrange entries from database ...... asec or desc order
 				$this->db->order_by('id DESC');
 				//get all entries from database
-				return $this->db->get('news')->result();
+				 
+					$query = $this->db->get('news');
+				 
+				return $query->result();
 			}
 
 			function countall()
@@ -37,10 +40,18 @@
 					//use get where and pass is into an array
 					return $this->db->get_where('news',array('id'=>$id))->row();
 				}
+				 
+				function get_one($ne_id)
+			{
+				$this->db->get_where('news',array('ne_id'=>$ne_id));
+				$query = $this->db->get('news');
+				return $query->row();
+			}
 
 			function save()
 			{
 				//post entires from form 
+				$arr['slug'] = $this->input->post('slug');
 				$arr['title'] = $this->input->post('title');
 				$arr['author'] = $this->input->post('author');
 				$arr['description'] = $this->input->post('description');
@@ -67,7 +78,9 @@
 
 			function update($id)
 			{
-				//post entires from form 
+				//post entires from form
+				
+				$arr['slug'] = $this->input->post('slug');
 				$arr['title'] = $this->input->post('title');
 				$arr['author'] = $this->input->post('author');
 				$arr['description'] = $this->input->post('description');

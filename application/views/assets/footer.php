@@ -1,3 +1,4 @@
+
  <div class="clear"></div>
 <div class="footer">
     <div class="wrap">
@@ -9,6 +10,8 @@
               
             </ul>
     </div>
+</div>
+
         <div class="copy">&copy; 2020 Talking-Talk. All Rights Reserved | Design by <p> The Talking-Talk">Blog</p></div>
         <div class="clear"></div>
     </div>

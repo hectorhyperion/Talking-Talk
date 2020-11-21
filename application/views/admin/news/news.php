@@ -1,4 +1,4 @@
- 
+
 <!doctype html>
 <html lang="en">
 
@@ -65,8 +65,9 @@
 		 	 <tr>
 		 	 	 <td><?php echo $n->title;?></td>
 		 	 	<td><?php echo $n->author;?></td>
+				  <td><?php echo $n->slug;?></td>
 		 	 	<?php // using uri segment to pass id   ?>	
-		 	 	<td><a href="<?php echo site_url('admin/news/edit/'.$n->id);?>" class="btn btn-primary">edit</a> <br><br> <a href="<?php echo site_url('admin/news/delete/'.$n->id);?>"class="btn btn-danger">delete</a></td>	
+		 	 	<td><a href="<?php echo site_url('admin/news/edit/'.$n->id);?>" class="btn btn-primary">edit</a> <a href="<?php echo site_url('admin/news/delete/'.$n->id);?>"class="btn btn-danger">delete</a></td>	
 
 
 		 	 </tr>

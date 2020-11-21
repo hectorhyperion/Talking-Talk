@@ -1,4 +1,4 @@
-
+<?php $title ?>
  
 <body class="sidebar-menu-collapsed">
   <div class="se-pre-con"></div>

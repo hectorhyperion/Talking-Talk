@@ -17,6 +17,7 @@
 				<h1 style="color: white;"><?php echo substr($n->title,0,35) ;?></h1>
 				<p  style="color: white;"><?php echo substr( $n->description,0,140);?>
 				<i>(Author:<?php echo $n->author;?>)</i></p>
+				<p>Posted on :<?php echo $n->created_at;?></p>
 			</div>
 			</div>
 		</a>

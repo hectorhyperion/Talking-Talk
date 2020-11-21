@@ -6,7 +6,8 @@
 		public function __construct()
 		{
 			parent::__construct();
-			//$this->load->helper('url');
+
+			$this->load->helper('form');
 			$this->load->model('news_model');
 			$this->load->model('comment_model');
 		}
@@ -29,14 +30,11 @@
 		  	$this->pagination->initialize($config);
 
 			$this->load->view('index',$arr);
+
+
 		}
-		function save($id)
-		{
-			$this->comment_model->save();
-			$arr['news'] = $this->news_model->getbyid($id);
-			 redirect('index/detail/',$arr);
-			// redirect('feeds');
-		}
+		
+	  
 		 
 		function about()
 		{
@@ -44,8 +42,11 @@
 		}
 		function detail($id)
 		{
-			//getting new from db
+			//getting news from db
 			$arr['news'] = $this->news_model->getbyid($id);
+			
+			$arr['comments']= $this->comment_model->get_comment('news_id');
+
 			$this->load->view('article',$arr);
 
 		}

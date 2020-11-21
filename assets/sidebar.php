@@ -23,7 +23,7 @@
           <a href="#"><i class="fa fa-cogs"></i>
             <span>News post category <i class="lnr lnr-chevron-right"></i></span></a>
           <ul class="sub-menu-list">
-            <li><a href="<?php echo site_url('admin/news')?>">News</a> </li>
+            <li><a href="<?php echo site_url()?>admin/news">News</a> </li>
             
           </ul>
         </li>
