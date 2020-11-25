@@ -25,9 +25,9 @@
 
 		} ?>
 	 
-	 
+ 
 		 <?php echo $this->pagination->create_links();?>
-
+ 
 			 
 
  <?php $this->load->view('assets/footer'); ?>

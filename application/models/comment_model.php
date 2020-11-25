@@ -14,24 +14,30 @@
 			return $this->db->insert('comments',$arr);
 
 		}
-		function getall()
-			{
-			//	$this->db->order_by('id DESC');
-			//	return $this->db->get_where('comments')->result_array();
-			}
+		 
 
 		 
 			function get_comment($news_id)
 			{
 				
-
+				
 				//get all comment entries from db
 				
 					return  $this->db->get_where('comments',array('news_id'=>$news_id))->result();
 					//return query
 					  
 			}
-
+			function getbyid($news_id)
+				{
+					//use get where and pass is into an array
+					return $this->db->get_where('comments',array('news_id'=>$news_id))->row();
+				}
+				 
+			function delete($id)
+			{
+				$this->db->where(array('id'=>$id));
+				$this->db->delete('comments');
+			}
 		 
 	}
 	

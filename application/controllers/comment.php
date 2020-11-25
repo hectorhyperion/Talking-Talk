@@ -15,12 +15,14 @@
 	 	  {
 	 	  	$news_id= $this->input->post('news_id');
 	  	//get news by id
+	 	  	
 	  		$arr['news'] = $this->news_model->getbyid($id);
 	  		//send comment entries to db 
 	  		$this->comment_model->save($news_id);
 		 
 			redirect('index/detail/'.$id);
 	}
+	 
 
 		}
 

@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="<?php echo base_url('asset/css/style.css')?>"media="all"/>
 <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/bootstrap.css')?>"media="all"/>
 
+
 </head> 
 <body>
 <div class="wrap">
@@ -24,3 +25,5 @@
         <div class="clear"></div>
         </div>
         <div class="container" >
+
+ 

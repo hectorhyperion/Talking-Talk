@@ -10,27 +10,28 @@
 	 		
 
  <hr>
- <h3> comment</h3>
+ <h3 style="color: white;" > comment</h3>
  
  <?php  
-  	foreach($comments as $n): ?>
-  		<h5><?php  echo $n['body'];?>[by <strong><?php echo $n['name'];?></strong> ]</h5>
+  	foreach($comments as $x): ?>
+  		<h5 style="color: white;" ><?php  echo $x->body ;?> [by <strong><?php echo $x->name;?></strong> ] <?php echo $x->time; ?></h5> 
+  		<!--<a href="<?php //echo site_url('comment/delete/'.$n->id);?>"class="btn btn-danger">delete</a>-->
   	<?php endforeach; ?>
  	 
  <hr>
  
-<h3>Add Comment</h3>
+<h3 style="color: white;">Add Comment</h3>
 <?php echo validation_errors();?>
 <?php echo form_open('comment/create/'.$news->id);?>
 	<div class="form-group">
-		<label>Name</label>
-		<input type="text" name="name" class="form-control">
+		<label style="color: white;">Name</label>
+		<input  type="text" name="name" class="form-control">
 	</div>
-	<div class="form-group">
+	<div class="form-group" style="color: white;">
 		<label>Email</label>
 		<input type="email" name="email" class="form-control">
 	</div>
-	<div class="form-group">
+	<div class="form-group" style="color: white;">
 		<label>Body</label>
 		<textarea name="body" class="form-control"></textarea>
 	</div>
