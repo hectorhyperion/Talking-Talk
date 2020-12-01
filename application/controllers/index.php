@@ -38,12 +38,18 @@
 		function detail($id)
 		{
 			//getting news from db and passing to view 
-			
+			if (! $arr['news'] = $this->news_model->getbyid($id)) 
+			{
+				$this->load->view(404);
+			}
+			 
+			else{
 			$arr['news'] = $this->news_model->getbyid($id);
 			//use comment id ... so it can select * from comments where news_id= id
 			$arr['comments']= $this->comment_model->get_comment($id);
 
 			$this->load->view('article',$arr);
+		}
 		}
 		function delete($id)
 		{
