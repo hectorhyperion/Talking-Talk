@@ -10,14 +10,19 @@
 		<a style="margin-bottom:20px; display: block; text-decoration: none;" href="<?php echo site_url('index/detail/'.$n->id);?>">
 		<div class="row">
 			<div class="col-md-3">
-				<img src="<?php echo site_url('uploads/'.$n->image);?>">
+				<img style="width: 100px;" src="<?php echo site_url('uploads/'.$n->image);?>">
 			</div>
 
 			<div class="col-md-6">
-				<h1 style="color: black;"><?php echo substr($n->title,0,35) ;?></h1>
-				<p  style="color: black;"><?php echo substr( $n->description,0,140);?>
+				<h1 style="color: black;"><?php echo word_limiter($n->title,25) ;?></h1>
+
+				<p  style="color: black;"><?php echo word_limiter($n->description,20);?>
+
 				<i>(Author:<?php echo $n->author;?>)</i></p>
-				<p>Posted on :<?php echo $n->created_at;?></p>
+ 
+				<button class="btn btn-default" style="margin-top: 5px;">read more</button>
+
+				<p class="post-date">Posted on :<?php echo $n->created_at;?></p>
 			</div>
 			</div>
 		</a>
@@ -25,9 +30,9 @@
 
 		} ?>
 	 
- 
+ 	<div class="pagination">
 		 <?php echo $this->pagination->create_links();?>
- 
+ </div>
 			 
 
  <?php $this->load->view('assets/footer'); ?>

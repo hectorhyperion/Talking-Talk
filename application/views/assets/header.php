@@ -4,6 +4,8 @@
 <title>Talking-Talkbolg</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="<?php echo base_url('bootstrap/css/bootstrap.css')?>" rel="stylesheet" type="text/css" media="all" />
+ <script src="https://cdn.ckeditor.com/4.15.1/standard-all/ckeditor.js"></script>
+
 <link href="<?php echo base_url('set/css/style.css')?>" rel="stylesheet" type="text/css"  media="all" />
 </head>
 <body>

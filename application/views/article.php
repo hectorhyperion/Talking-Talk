@@ -1,7 +1,7 @@
  <?php $this->load->view('assets/header'); ?>
 
 		<b><h1  style="color: black;"> <?php echo $news->title;?></h1></b><br>
-		<img src="<?php echo site_url('uploads/'.$news->image);?>"style="padding-left:100px;" class="container" >  <br> 
+		<img src="<?php echo site_url('uploads/'.$news->image);?>" class="container" >  <br> 
 		<p  style="color: black; font-family:arial;" ><?php echo $news->description;?>
 
 		<p style="  font-size: 15px;  font-family:perpetual; color: black; " > Author:<?php echo $news->author;?> 

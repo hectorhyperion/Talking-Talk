@@ -61,4 +61,10 @@
 	<div class="clearfix"></div>
 
  </form> 
+  <script>
+    CKEDITOR.replace('editor1', {
+      extraPlugins: 'placeholder',
+      height: 220
+    });
+  </script>
  <?php include 'assets/footer.php'; ?>

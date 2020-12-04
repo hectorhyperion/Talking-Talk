@@ -11,6 +11,7 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>">
   <link rel="stylesheet" href="<?php echo base_url('assets/css/style-starter.css')?>">
+ <script src="https://cdn.ckeditor.com/4.15.1/standard-all/ckeditor.js"></script>
   
 
   <!-- google fonts -->

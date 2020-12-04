@@ -41,7 +41,7 @@
 		 		<div class="row">
 		 			<label class="col-md-3"><b>Description</b></label>
 		 			<div class="col-md-9">
-		 				<textarea name="description" class="form-control" ><?php echo $news->description; ?></textarea>
+		 				<textarea id="editor1" name="description" class="form-control" ><?php echo $news->description; ?></textarea>
 		 			</div></div>
 		 			<div class="clearfix"></div>
 			 </div>
@@ -62,4 +62,10 @@
 	</div>
 	<div class="clearfix"></div>
  </form> 
+ <script>
+    CKEDITOR.replace('editor1', {
+      extraPlugins: 'placeholder',
+      height: 220
+    });
+  </script>
  <?php include 'assets/footer.php'; ?>
