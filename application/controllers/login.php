@@ -7,6 +7,7 @@
 		{
 			parent::__construct();
 		}
+		
 		public function index(){
 			$this->load->view('login');
 		}

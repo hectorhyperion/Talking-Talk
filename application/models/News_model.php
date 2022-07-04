@@ -51,7 +51,7 @@
 			function save()
 			{
 				//post entires from form 
-				$arr['slug'] = $this->input->post('slug');
+			//	$arr['slug'] = $this->input->post('slug');
 				$arr['title'] = $this->input->post('title');
 				$arr['author'] = $this->input->post('author');
 				$arr['description'] = $this->input->post('description');
