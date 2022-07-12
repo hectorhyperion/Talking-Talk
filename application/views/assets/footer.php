@@ -1,4 +1,5 @@
 </div>
+</div>
 <br>
 <section class="app-footer">
   <footer class="footer-28 py-5">

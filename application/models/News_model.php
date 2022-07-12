@@ -51,7 +51,7 @@
 			function save()
 			{
 				//post entires from form 
-			//	$arr['slug'] = $this->input->post('slug');
+			 
 				$arr['title'] = $this->input->post('title');
 				$arr['author'] = $this->input->post('author');
 				$arr['description'] = $this->input->post('description');
@@ -80,7 +80,7 @@
 			{
 				//post entires from form
 				
-				$arr['slug'] = $this->input->post('slug');
+				 
 				$arr['title'] = $this->input->post('title');
 				$arr['author'] = $this->input->post('author');
 				$arr['description'] = $this->input->post('description');
@@ -92,6 +92,9 @@
 					$config['upload_path'] = APPPATH.'../uploads/';
 					$config['allowed_types'] = 'gif|jpg|png';
 					$config['file_name'] = date('YmdHms').'_'.rand(1,999999);
+					$config['max_size']= '500';
+					$config['max_width']= '500';
+					$config['max_height']= '500';
 					$this->upload->initialize($config);
 					if ($this->upload->do_upload('image')) 
 					{

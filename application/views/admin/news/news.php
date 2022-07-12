@@ -51,7 +51,7 @@
  	<tr>
  		<th><b>Title</b></th>
  		<th><b>Aurthor</b></th>
- 		<th><b>Action</b></th>
+ 		<th><b>News</b></th>
 
  	</tr>
  	
@@ -65,7 +65,7 @@
 		 	 <tr>
 		 	 	 <td><?php echo $n->title;?></td>
 		 	 	<td><?php echo $n->author;?></td>
-				  <td><?php echo $n->slug;?></td>
+				  <td><?php echo $n->description;?></td>
 		 	 	<?php // using uri segment to pass id   ?>	
 		 	 	<td><a href="<?php echo site_url('admin/news/edit/'.$n->id);?>" class="btn btn-primary">edit</a> <a href="<?php echo site_url('admin/news/delete/'.$n->id);?>"class="btn btn-danger">delete</a></td>	
 

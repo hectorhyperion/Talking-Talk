@@ -2,10 +2,10 @@
 
 		<b><h1  style=""> <?php echo $news->title;?></h1></b><br>
 		<img src="<?php echo site_url('uploads/'.$news->image);?>" style="width: 50%;" >  <br> 
-		<p  style="font-family:arial;" ><?php echo $news->description;?>
+		<p  ><?php echo $news->description;?></p>
 
-		<p style="font-size: 15px;  font-family:perpetual;  " > Author:<?php echo $news->author;?> 
-		</p></p>
+		<p  > Author:<?php echo $news->author;?> 
+		</p> 
 				<small style=" float: right; ">Posted on :<?php echo $news->created_at;?></small></i>
 	
 	<div class="clear" ></div>
@@ -29,13 +29,13 @@
 	 
 	<div class="form-group">
 		<label>Name</label>
-		<input style="" type="text" name="name" class="form-control">
+		<input  type="text" name="name" class="form-control">
 	</div>
-	<div class="form-group" style="">
+	<div class="form-group" >
 		<label>Email</label>
 		<input type="email" name="email" class="form-control">
 	</div>
-	<div class="form-group" style="">
+	<div class="form-group" >
 		<label>Body</label>
 		<textarea name="body" class="form-control"></textarea>
 	</div>

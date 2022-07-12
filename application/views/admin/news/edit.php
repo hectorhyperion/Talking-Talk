@@ -1,7 +1,6 @@
 <?php include 'assets/sidebar.php'; ?>
  <?php include 'assets/header.php'; ?>
 		  <!-- main content start -->
-
  <?php include 'assets/main.php'?>
  
 <a href="<?php echo site_url('admin/news');?>"><input type="button" name="back" value="back" class="btn btn-primary" style="float: right; font-family: algerian;" ></a>
@@ -9,14 +8,8 @@
 		  <h1><b>Edit News</b></h1><br>
 		 <form action="<?php echo  site_url('admin/news/update/'.$news->id);?>" method="post" enctype="multipart/form-data" >
 		 	<div class="col-md-7" >
-			 <div class="form-group">
-		 		<div class="row">
-		 			<label class="col-md-3"><b>slug</b></label>
-		 			<div class="col-md-9">
-		 				<input type="text" name="slug" class="form-control" required="required" value="<?php echo $news->slug; ?>" >
-		 			</div>
-					 
-		 			<div class="clearfix"></div>
+			 <div class="form-group">			 
+		 	<div class="clearfix"></div>
 			 </div> 
 			 <br>
 		 	<div class="form-group">
