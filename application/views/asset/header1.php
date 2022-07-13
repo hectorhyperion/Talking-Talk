@@ -9,8 +9,9 @@
   <title>The Talking-Talk Admin</title>
 
   <!-- Template CSS -->
-  <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>">
-  <link rel="stylesheet" href="<?php echo base_url('assets/css/style-starter.css')?>">
+  <link rel="stylesheet" href="<?php echo site_url('assets/css/style.css')?>">
+	<link rel="stylesheet" href="<?php echo site_url('set/css/style.css')?>">
+  <link rel="stylesheet" href="<?php echo site_url('assets/css/style-starter.css')?>">
  <script src="https://cdn.ckeditor.com/4.15.1/standard-all/ckeditor.js"></script>
   
 
@@ -77,6 +78,8 @@
                   <li> <a href="#"><i class="lnr lnr-cog"></i>Setting</a> </li>
                  
                   <li class="logout"> <a href="<?php echo site_url('admin/dashboard/logout')?>"><i class="fa fa-power-off"></i> Logout</a> </li>
+									
+                <!---  <li class="logout"> <a href="<?php //echo site_url('admin/dashboard/change_password')?>"><i class="fa fa-key"></i> Change_password</a> </li>-->
                 </ul>
               </li>
             </ul>
@@ -87,6 +90,46 @@
     <!--notification menu end -->
   </div>
   <!-- //header-ends -->
+	  <!-- sidebar menu start -->
+		
+		<div class="sidebar-menu sticky-sidebar-menu">
+
+<!-- logo start -->
+<div class="logo">
+	<h1><a href="<?php echo site_url('admin/dashboard')?>">Dashboard</a></h1>
+</div>
+
+
+<div class="logo-icon text-center">
+	<a href="<?php echo site_url('admin/dashboard')?>" title="logo">
+		<img src="<?php echo site_url('assets/images/logo.png')?>" alt="logo-icon"> </a>
+</div>
+<!-- //logo end -->
+
+<div class="sidebar-menu-inner">
+
+	<!-- sidebar nav start -->
+	<ul class="nav nav-pills nav-stacked custom-nav">
+		
+		</li>
+		<li class="menu-list">
+			<a href="#"><i class="fa fa-cogs"></i>
+				<span>News post category <i class="lnr lnr-chevron-right"></i></span></a>
+			<ul class="sub-menu-list">
+				<li><a href="<?php echo site_url()?>admin/news">News</a> </li>
+				
+			</ul>
+		</li>
+		<a class="toggle-btn">
+        <i class="fa fa-angle-double-left menu-collapsed__left"><span>Collapse Sidebar</span></i>
+        <i class="fa fa-angle-double-right menu-collapsed__right"></i>
+      </a>
+	
+	<!-- //toggle button end -->
+</div>
+</div>
+<!-- //sidebar menu end -->
+
    <!-- main content start -->
 <div class="main-content">
 

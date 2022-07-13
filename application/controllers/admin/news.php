@@ -8,10 +8,16 @@
 			if(!$this->session->userdata('admin'))
 				redirect('admin');
 				$this->load->model('news_model');
+				$this->load->library('form_validation');
 
 		}
 		function index($offset=0)
 		{
+			$this->load->view('asset/header1'); 
+			
+  			 
+  
+  			 
 			//load pagination library
 			$this->load->library('pagination');
 			//	url redirct admin folder,news controller,news view
@@ -33,20 +39,32 @@
 
 			//passing the array to the view
 			$this->load->view('admin/news/news',$arr);
+			$this->load->view('asset/footer1');
 		}
 		function add()
 		{
+			$this->form_validation->set_rules('title', 'Title', 'required');
+			$this->form_validation->set_rules('author', 'Author', 'required');
+			$this->form_validation->set_rules('description', 'Description', 'required');
+			//check validation
+			if($this->form_validation->run() === FALSE){
 			// load function in add view
+			$this->load->view('asset/header1'); 
+			
+  			 
+  
+  		 
 			$this->load->view('admin/news/add');
+			$this->load->view('asset/footer1');
+			}
+			else{
+				$this->news_model->save();
+				//set flash data 
+				$this->session->set_flashdata('success','News saved sucessfully');
+				redirect('admin/news');
+			}
 		}
-		function save()
-		{
-			// load form data from  function model 
-			$this->news_model->save();
-			//set flash data 
-			$this->session->set_flashdata('success','News saved sucessfully');
-			redirect('admin/news');
-		}
+		 
 		function edit($id)
 		{
 			//use the id to get the entry from the database

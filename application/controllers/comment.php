@@ -13,17 +13,36 @@
 			 
 			 function create($id)
 	 	  {
-	 	  	$news_id= $this->input->post('news_id');
+			$this->form_validation->set_rules('name', 'Name', 'required');
+			$this->form_validation->set_rules('email', 'Email', 'required');
+			$this->form_validation->set_rules('body', 'Body', 'required');
+
+			if($this->form_validation->run() === FALSE){
+				redirect('index/detail/'.$id);
+			}
+			else{
+					  	$news_id= $this->input->post('news_id');
 	  	//get news by id
 	 	  	
 	  		$arr['news'] = $this->news_model->getbyid($id);
 	  		//send comment entries to db 
 	  		$this->comment_model->save($news_id);
-		 
-			redirect('index/detail/'.$id);
-	}
-	 
+			}
 
+	 
+		 
+		
+	}
+	/*
+	function delete($id)
+	{
+		
+		$data['comments']= $this->comment_model->getbyid();
+		  //delete comment entries from db 
+		  $this->comment_model->delete($id);
+		 redirect('index/detail/'.$id);
+	}
+*/
 		}
 
 

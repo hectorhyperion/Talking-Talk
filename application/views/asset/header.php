@@ -56,7 +56,7 @@
 						</div>
 					</li>
 					<li class="nav-item @@contact__active">
-						<a class="nav-link" href="<?php echo site_url('contact')?>">Contact</a>
+						 
 					</li>
 				</ul>
 			</div>

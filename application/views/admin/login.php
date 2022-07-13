@@ -1,22 +1,52 @@
-<!DOCTYPE html>
-<html lang="zxx">
+				<h3>Login now</h3>
+					<br>
+					<?php if($this->session->flashdata('login_failed'))
+					{
+						?>
+					<div class="alert alert-danger" role="alert">
+						<?php
+						echo $this->session->flashdata('login_failed');
+						?>
+					</div>
+					<?php 
 
-<head>
-	<title>The Talking-Talk admin login</title>
-	<!-- Meta tags -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- //Meta tags -->
-	<link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>" type="text/css" media="all" /><!-- Style-CSS -->
-	<link rel="stylesheet" href="<?php echo base_url('assets/css/style-starter.css')?>" type="text/css" media="all" /><!-- Style-CSS -->
-	<link href="css/font-awesome.css" rel="stylesheet"><!-- font-awesome-icons -->
-</head>
+						}
 
-<body>
-	
 
-	<?php include 'assets/main_1.php';?>
+					 ?>
+					
+        
+					<form  method="post" action="<?php echo site_url('admin/login/verify')?>"class="signin-form">
+						<div class="form-input">
+							<span class="fa fa-envelope-o" aria-hidden="true"></span> 
+							<input type="text" name="username"
+								placeholder="username" />				
+						</div>
+						<?php echo form_error('username');?>
+						<div class="form-input">
+							<span class="fa fa-key" aria-hidden="true"></span> <input type="password" name="password" placeholder="Password"/>
+								
+						</div>
+						<?php echo form_error('password');?>
+						<div class="login-remember d-grid">
+							<label class="check-remaind">
+								
+								
+								
+							</label>
+							<button class="btn btn-primary" name="submit" type="submit" value="submit" >Login</button>
+						</div>
+						<a href="<?php echo site_url('admin/login/forgot_view')?>">Forgot password?</a>
+						 
+					</form>
+					
+
+				<!-- copyright -->
+				 
+				<!-- //copyright -->
+			</div>
+		</div>
+	</section>
 	
 </body>
 

@@ -1,4 +1,4 @@
-<?php $this->load->view('assets/header'); ?>
+
     
 	<h1 style="font-family:tahoma; ">Recent news</h1>
 	<br>
@@ -11,7 +11,7 @@
 		<a style="margin-bottom:20px; align-content:center;  display: block; text-decoration: none;" href="<?php echo site_url('index/detail/'.$n->id);?>">
 		<div class="row">
 			<div class="col-md-3">
-				<img class="img-thumbnail rounded rounded" src="<?php echo site_url('uploads/'.$n->image);?> ">
+				<img class="img-thumbnail rounded " src="<?php echo site_url('uploads/'.$n->image);?> ">
 			</div>
 			<br>
 
@@ -29,4 +29,4 @@
 		} ?>
 		 
 
-<?php $this->load->view('assets/footer');?>
+ 

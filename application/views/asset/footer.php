@@ -10,7 +10,7 @@
             <a class="navbar-brand mb-3" href="index.html">
               <span class="fa fa-newspaper-o"></span>Talking-Talk News blog</a>
             <p class="copy-footer-28"> © 2020. All Rights Reserved. </p>
-            <h5 class="mt-2">Design by <a href="#">Talking-Talk blog</a></h5>
+            <h5 class="mt-2">Design by <a href="<?php echo site_url('index')?>">Talking-Talk blog</a></h5>
           </div>
           
             </div>

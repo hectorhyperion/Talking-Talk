@@ -39,6 +39,7 @@
 			$this->load->view('article',$arr);
 
 		}
+
 		
 		
 	}

@@ -13,6 +13,7 @@
 		}
 		  function index($offset=0)
 		  {
+			$this->load->view('asset/header');
 		  	$this->load->library('pagination');
 			//	url redirect admin folder,news controller,news view
 			$config['base_url']= site_url('index/index');
@@ -30,6 +31,7 @@
 		  	$this->pagination->initialize($config);
 
 			$this->load->view('index',$arr);
+			$this->load->view('asset/footer');
 
 
 		}
@@ -44,21 +46,15 @@
 			}
 			 
 			else{
-			$arr['news'] = $this->news_model->getbyid($id);
-			//use comment id ... so it can select * from comments where news_id= id
-			$arr['comments']= $this->comment_model->get_comment($id);
-
-			$this->load->view('article',$arr);
+				$this->load->view('asset/header');
+					$arr['news'] = $this->news_model->getbyid($id);
+					//use comment id ... so it can select * from comments where news_id= id
+					$arr['comments']= $this->comment_model->get_comment($id);
+				$this->load->view('article',$arr);
+				$this->load->view('asset/footer');
 		}
 		}
-		function delete($id)
-		{
-			
-			$data['comments']= $this->comment_model->getbyid($news_id);
-	  		//delete comment entries from db 
-	  		$this->comment_model->delete($id);
-		 	redirect('index/detail/'.$comments);
-		}
+		 
 		
 	}
 ?>

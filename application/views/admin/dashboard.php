@@ -1,16 +1,35 @@
- 
- 
-<body class="sidebar-menu-collapsed">
-  <div class="se-pre-con"></div>
-<section>
-  <?php include 'assets/sidebar.php'; ?>
- <?php include 'assets/header.php'; ?>
-  <!-- main content start -->
-  
- 
-</section>
 
-<?php include 'assets/footer.php'; ?>
-<!-- move top -->
+    
+	<h1 style="font-family:tahoma; ">Newly Uploaded</h1>
+	<br>
+   	<?php 
+			//using foreach loop to display news....
+		foreach($news as $n)
+		{
+
+		?>
+		<a style="margin-bottom:20px; align-content:center;  display: block; text-decoration: none;" href="<?php echo site_url('index/detail/'.$n->id);?>">
+		<div class="row">
+			<div class="col-md-3">
+				<img class="img-thumbnail rounded " src="<?php echo site_url('uploads/'.$n->image);?> ">
+			</div>
+			<br>
+
+			<div class="col-md-6">
+				<h1><?php echo word_limiter($n->title,15) ;?></h1>
+				<p style="margin:auto;" ><?php echo word_limiter( $n->description,45);?>
+				<i>(Author:<?php echo $n->author;?>)</i></p>
+				<p>Posted on :<?php echo $n->created_at;?></p>
+				<button class="btn btn-info" style="margin-top: 5px;">read more</button>
+			</div>
+			</div>
+		</a>
+		<?php 
+
+		} ?>
+		 
+
+ 
+
 
   

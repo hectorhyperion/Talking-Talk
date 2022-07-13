@@ -1,5 +1,5 @@
 
- <?php $this->load->view('assets/header'); ?>
+ <?php $this->load->view('asset/header'); ?>
  <h1>News </h1>
  	<?php 
 			//using foreach loop to display news....
@@ -10,7 +10,7 @@
 		<a style="margin-bottom:20px; display: block; text-decoration: none;" href="<?php echo site_url('index/detail/'.$n->id);?>">
 		<div class="row">
 			<div class="col-md-3">
-				<img style="width: 250px;" src="<?php echo site_url('uploads/'.$n->image);?>">
+				<img class="img-thumbnail rounded" src="<?php echo site_url('uploads/'.$n->image);?>">
 			</div>
 
 			<div class="col-md-6">
@@ -43,6 +43,6 @@
  
 			 
 
- <?php $this->load->view('assets/footer'); ?>
+ <?php $this->load->view('asset/footer'); ?>
 </div>
 </div></div>

@@ -1,28 +1,4 @@
-
-<!doctype html>
-<html lang="en">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>The Talking-Talk Admin</title>
-
-  <!-- Template CSS -->
-  <link rel="stylesheet" href="<?php echo base_url('assets/css/style-starter.css')?>">
-
-  <!-- google fonts -->
-  <link href="//fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
-</head>
  
-<body class="sidebar-menu-collapsed">
-  <div class="se-pre-con"></div>
-<section>
-  <?php include 'assets/sidebar.php'; ?>
- <?php include 'assets/header.php'; ?>
-  <!-- main content start -->
- <?php include 'assets/main.php'?>
  <h1 style="display: inline-block;font-weight: 400;color: #fd7e14;text-align: center; vertical-align: middle;  cursor: pointer;-webkit-user-select: none;-moz-user-select: none; -ms-user-select: none; user-select: none;background-color: transparent;border: 1px solid transparent;padding: 0.375rem 0.75rem;font-size: 3rem;line-height: 1.5;border-radius: 0.25rem;transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;"><a href="<?php echo site_url('admin/news')?>">News </a></h1>
 		 <hr>
 		 <a href="<?php echo site_url('admin/news/add')?>" class="btn btn-info">Add New News </a>
@@ -47,7 +23,7 @@
 		<b>search Result for - <?php echo $this->input->get('search'); }?>  </b>
  		
 
- <table class="table table-bordered">
+ <table class="table table-bordered able table-striped ">
  	<tr>
  		<th><b>Title</b></th>
  		<th><b>Aurthor</b></th>
@@ -84,6 +60,6 @@
  <!---create pagination links -->
  <?php echo $this->pagination->create_links(); ?>
 </section>
-<?php include 'assets/footer.php'; ?>
+ 
 <!-- move top -->
 
